@@ -1,0 +1,7 @@
+<div *ngFor="let user of userList">
+  <p>
+    Name: {{user.lastname}} {{user.firstname}}, Age: {{user.age}}
+    <a [routerLink]="['detail', user.id]">View details >></a>
+  </p>
+</div>
+<router-outlet></router-outlet>
